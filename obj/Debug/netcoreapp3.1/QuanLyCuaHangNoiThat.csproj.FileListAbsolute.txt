@@ -1,0 +1,12 @@
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.AssemblyInfoInputs.cache
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.AssemblyInfo.cs
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.csproj.CoreCompileInputs.cache
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.exe
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.deps.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.runtimeconfig.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.runtimeconfig.dev.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.dll
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.pdb
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.dll
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.pdb
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\netcoreapp3.1\QuanLyCuaHangNoiThat.genruntimeconfig.cache

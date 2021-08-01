@@ -1,0 +1,16 @@
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\net5.0\QuanLyCuaHangNoiThat.exe
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\net5.0\QuanLyCuaHangNoiThat.deps.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\net5.0\QuanLyCuaHangNoiThat.runtimeconfig.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\net5.0\QuanLyCuaHangNoiThat.runtimeconfig.dev.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\net5.0\QuanLyCuaHangNoiThat.dll
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\net5.0\ref\QuanLyCuaHangNoiThat.dll
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Debug\net5.0\QuanLyCuaHangNoiThat.pdb
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.AssemblyInfoInputs.cache
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.AssemblyInfo.cs
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.csproj.CoreCompileInputs.cache
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.dll
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\ref\QuanLyCuaHangNoiThat.dll
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.pdb
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.genruntimeconfig.cache
+D:\GitHub\QuanLyCuaHangNoiThat\obj\Debug\net5.0\QuanLyCuaHangNoiThat.csproj.AssemblyReference.cache
