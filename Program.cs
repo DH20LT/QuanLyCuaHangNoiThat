@@ -8,7 +8,8 @@ namespace QuanLyCuaHangNoiThat
 {
     class Program
     {
-        public const string Name = "Quản Lý Cửa Hàng Nội Thất";
+        const string NameOfProgram = "Quản Lý Cửa Hàng Nội Thất";
+        public static string getName() { return NameOfProgram; }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -16,32 +17,47 @@ namespace QuanLyCuaHangNoiThat
             ArrayList arrNoiThat = new ArrayList();
             Programming(arrNoiThat);
         }
-        static void Programming(ArrayList arrNoiThat)
+        public static void Programming(ArrayList arrNoiThat)
         {
+            Console.Clear();
             Menu.MenuMain();
             int iChucNang = int.Parse(Console.ReadLine());
             do
             {
                 switch(iChucNang)
                 {
+                    case 0: // Thoát
+                        {
+                            Environment.Exit(0);
+                            break;
+                        }
                     case 1:
                         {
-                            ChucNang.CreateObject();
+                            ChucNang.CreateObject(arrNoiThat);
                             break;
                         }
                     case 2:
                         {
-                            //ChucNang.FilterObject();
+                            ChucNang.FilterObject(arrNoiThat);
                             break;
                         }
                     case 3:
                         {
-                            // to exit program
-
+                            
                             break;
                         }
+                    default:
+                        Console.WriteLine("Không Có Chức Năng Này! Enter để nhập lại");
+                        Console.ReadLine();
+                        Program.Programming(arrNoiThat);
+                        break;
                 }
             } while (iChucNang > 0);
+        }
+
+        internal static void Programming(object arrNoiThat)
+        {
+            throw new NotImplementedException();
         }
     }
     
