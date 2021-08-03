@@ -41,30 +41,133 @@ namespace QuanLyCuaHangNoiThat
         public void setSoDaBan(int SoDaBan) { this.SoDaBan = SoDaBan; }
         //DateTime NgayNhapHang; // Ngày Nhập Hàng
 
-        public virtual void NhapThongTin(ArrayList arrNoiThat)
+        public void TestNewNhapThongTin()
         {
-            Menu.MenuNhapThongTin();
+            Console.Write(Ten);
+            Console.Write(MaSanPham);
+            Console.ReadLine();
+        }
+        public virtual void NhapThongTin(ArrayList arrNoiThat, int i)
+        {
+            Menu.DrawMenuNhapThongTin(i);
             int iChucNang = int.Parse(Console.ReadLine());
-            switch (iChucNang)
+            do
             {
-                case 1: // Nhập Tên
-                    {
-                        Console.Write("Tên           : ");
-                        Ten = Console.ReadLine();
-                        break;
-                    }
-                case 0:
-                    {
-                        Program.Programming(arrNoiThat);
-                        break;
-                    }
-            }
+                switch (iChucNang)
+                {
+                    case 1: // Nhập Tên
+                        {
+                            Console.Write("Tên           : ");
+                            Ten = Console.ReadLine();
+                            //TestNewNhapThongTin();
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 2: //Nhập Mã Sản Phầm
+                        {
+                            Console.Write("Mã Sản Phầm   : ");
+                            MaSanPham = Console.ReadLine();
+                            //TestNewNhapThongTin();
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 3: //Nhập Kích Thước
+                        {
+                            Console.Write("Kích Thước    : ");
+                            KichThuoc = Console.ReadLine();
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 4: //Nhập Vật Liệu
+                        {
+                            Console.Write("Vật Liệu      : ");
+                            VatLieu = Console.ReadLine();
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 5: //Nhập Màu Sắc
+                        {
+                            Console.Write("Màu Sắc       : ");
+                            MauSac = Console.ReadLine();
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 6: //Nhập Hãng Sản Xuất
+                        {
+                            Console.Write("Hãng Sản Xuất : ");
+                            HangSanXuat = Console.ReadLine();
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 7: //Nhập Nơi Sản Xuất
+                        {
+                            Console.Write("Nơi Sản Xuất  : ");
+                            NoiSanXuat = Console.ReadLine();
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 8: //Nhập Giá
+                        {
+                            Console.Write("Giá           : ");
+                            Gia = int.Parse(Console.ReadLine());
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 9: //Nhập Số Lượng
+                        {
+                            Console.Write("Số Lượng      : ");
+                            SoLuong = int.Parse(Console.ReadLine());
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 10: //Nhập Số Đã Bán
+                        {
+                            Console.Write("Số Đã Bán     : ");
+                            SoDaBan = int.Parse(Console.ReadLine());
+                            NhapThongTin(arrNoiThat, i);
+                            break;
+                        }
+                    case 0:
+                        {
+                            Program.Programming(arrNoiThat);
+                            break;
+                        }
+                }
+            }while(true);
             //Console.WriteLine("Hãng Sản Xuất : ");
             //Console.WriteLine("Nơi Sản Xuất  : ");
         }
+        
         public virtual void XuatThongTin()
         {
-
+            Console.WriteLine("==========================================");
+            Console.WriteLine("| Tên : " + Ten);
+            Console.WriteLine("| Mã Sản Xuất : " + MaSanPham);
+            Console.WriteLine("| Kích Thước : " + KichThuoc);
+            Console.WriteLine("| Vật Liệu : " + VatLieu);
+            Console.WriteLine("| Màu Sắc : " + MauSac);
+            Console.WriteLine("| Hãng Sản Xuất : " + HangSanXuat);
+            Console.WriteLine("| Nơi Sản Xuất : " + NoiSanXuat);
+            Console.WriteLine("| Giá : " + Gia);
+            Console.WriteLine("| Số Lượng : " + SoLuong);
+            Console.WriteLine("| Số Đã Bán : " + SoDaBan);
+        }
+        public virtual void XuatThongTin(string CachGoi, string GiaTri)
+        {
+            Console.WriteLine("==========================================");
+            Console.WriteLine("| Tên : " + Ten);
+            if (GiaTri.Equals(""))
+            { } else 
+                Console.WriteLine("| {0} : {1}", CachGoi, GiaTri);
+            Console.WriteLine("| Mã Sản Xuất : " + MaSanPham);
+            Console.WriteLine("| Kích Thước : " + KichThuoc);
+            Console.WriteLine("| Vật Liệu : " + VatLieu);
+            Console.WriteLine("| Màu Sắc : " + MauSac);
+            Console.WriteLine("| Hãng Sản Xuất : " + HangSanXuat);
+            Console.WriteLine("| Nơi Sản Xuất : " + NoiSanXuat);
+            Console.WriteLine("| Giá : " + Gia);
+            Console.WriteLine("| Số Lượng : " + SoLuong);
+            Console.WriteLine("| Số Đã Bán : " + SoDaBan);
         }
     }
 }

@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace QuanLyCuaHangNoiThat
 {
-    class Ban : NoiThat
+    class Ghe : NoiThat
     {
-        string LoaiBan;
-        public string getLoaiBan() { return LoaiBan; }
-        public void setLoaiBan(string LoaiBan) { this.LoaiBan = LoaiBan; }
-        public Ban()
+        string LoaiGhe;
+        public string getLoaiGhe() { return LoaiGhe; }
+        public void setLoaiGhe(string LoaiGhe) { this.LoaiGhe = LoaiGhe; }
+        public Ghe()
         {
             setTen("");
             setMaSanPham("");
-            setLoaiBan("");
+            setLoaiGhe("");
             setKichThuoc("");
             setVatLieu("");
             setMauSac("");
@@ -26,21 +26,21 @@ namespace QuanLyCuaHangNoiThat
             setSoLuong(0);
             setSoDaBan(0);
         }
-        public Ban( string Ten, 
-                    string MaSanPham, 
-                    string LoaiBan,
-                    string KichThuoc, 
-                    string VatLieu, 
-                    string MauSac, 
-                    string HangSanXuat, 
-                    string NoiSanXuat, 
-                    int Gia, 
-                    int SoLuong, 
+        public Ghe(string Ten,
+                    string MaSanPham,
+                    string LoaiGhe,
+                    string KichThuoc,
+                    string VatLieu,
+                    string MauSac,
+                    string HangSanXuat,
+                    string NoiSanXuat,
+                    int Gia,
+                    int SoLuong,
                     int SoDaBan)
         {
             setTen(Ten);
             setMaSanPham(MaSanPham);
-            setLoaiBan(LoaiBan);
+            setLoaiGhe(LoaiGhe);
             setKichThuoc(KichThuoc);
             setVatLieu(VatLieu);
             setMauSac(MauSac);
@@ -53,11 +53,13 @@ namespace QuanLyCuaHangNoiThat
         public override void NhapThongTin(ArrayList arrNoiThat, int i)
         {
             Console.Clear();
+            Console.Title = "Nhập Đối Tượng Ghế" + Program.getName();
+            Console.WriteLine("Nhập Đối Tượng Ghế");
             base.NhapThongTin(arrNoiThat, i);
         }
-        public override void XuatThongTin(string CachGoi, string GiaTri)
+        public override void XuatThongTin()
         {
-            base.XuatThongTin("Loại Bàn", LoaiBan);
+            base.XuatThongTin();
         }
     }
 }

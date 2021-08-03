@@ -12,7 +12,8 @@ namespace QuanLyCuaHangNoiThat
         public static string getName() { return NameOfProgram; }
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
+            Console.OutputEncoding = Encoding.Unicode;
+            Console.InputEncoding = Encoding.Unicode;
             Console.Title = ("Quản Lý Cửa Hàng Nội Thất");
             ArrayList arrNoiThat = new ArrayList();
             Programming(arrNoiThat);
@@ -43,7 +44,7 @@ namespace QuanLyCuaHangNoiThat
                         }
                     case 3:
                         {
-                            
+                            ChucNang.UpdateObject(arrNoiThat);
                             break;
                         }
                     default:
@@ -53,11 +54,6 @@ namespace QuanLyCuaHangNoiThat
                         break;
                 }
             } while (iChucNang > 0);
-        }
-
-        internal static void Programming(object arrNoiThat)
-        {
-            throw new NotImplementedException();
         }
     }
     
