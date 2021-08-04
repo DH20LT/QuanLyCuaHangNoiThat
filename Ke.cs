@@ -7,16 +7,12 @@ using System.Threading.Tasks;
 
 namespace QuanLyCuaHangNoiThat
 {
-    class Ghe : NoiThat
+    class Ke : NoiThat //Kệ
     {
-        string LoaiGhe;
-        public string getLoaiGhe() { return LoaiGhe; }
-        public void setLoaiGhe(string LoaiGhe) { this.LoaiGhe = LoaiGhe; }
-        public Ghe()
+        public Ke()
         {
             setTen("");
             setMaSanPham("");
-            setLoaiGhe("");
             setKichThuoc("");
             setVatLieu("");
             setMauSac("");
@@ -26,9 +22,8 @@ namespace QuanLyCuaHangNoiThat
             setSoLuong(0);
             setSoDaBan(0);
         }
-        public Ghe(string Ten,
+        public Ke(string Ten,
                     string MaSanPham,
-                    string LoaiGhe,
                     string KichThuoc,
                     string VatLieu,
                     string MauSac,
@@ -40,7 +35,6 @@ namespace QuanLyCuaHangNoiThat
         {
             setTen(Ten);
             setMaSanPham(MaSanPham);
-            setLoaiGhe(LoaiGhe);
             setKichThuoc(KichThuoc);
             setVatLieu(VatLieu);
             setMauSac(MauSac);
@@ -53,23 +47,15 @@ namespace QuanLyCuaHangNoiThat
         public override void NhapThongTin(ArrayList arrNoiThat, int i)
         {
             Console.Clear();
-            Console.Title = "Nhập Đối Tượng Ghế" + Program.getName();
+            Console.Title = "Nhập Đối Tượng Kệ" + Program.getName();
             base.NhapThongTin(arrNoiThat, i);
         }
         public override void XuatThongTin()
         {
             base.XuatThongTin();
         }
-        public override void XuatThongTin(string CachGoi, string GiaTri)
-        {
-            base.XuatThongTin(CachGoi, GiaTri);
-        }
         public void CapNhatThongTin(ArrayList arrNoiThat, int i)
         {
-            base.NhapThongTin(arrNoiThat, i);
-            Console.Write("Loại Ghế      : ");
-            setLoaiGhe(Console.ReadLine());
-            Console.Clear();
             base.NhapThongTin(arrNoiThat, i);
         }
     }

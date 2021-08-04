@@ -25,13 +25,9 @@ namespace QuanLyCuaHangNoiThat
             Console.WriteLine("==========================================");
             Console.WriteLine("| 1. Tạo Đối Tượng Bàn                   |");
             Console.WriteLine("| 2. Tạo Đối Tượng Ghế                   |");
-            Console.WriteLine("| 3. Tạo Đối Tượng                       |");
-            Console.WriteLine("| 4. Tạo Đối Tượng                       |");
-            Console.WriteLine("| 5. Tạo Đối Tượng Xuất                  |");
-            Console.WriteLine("| 6. Tạo Đối Tượng                       |");
-            Console.WriteLine("| 7. Tạo Đối Tượng                       |");
-            Console.WriteLine("| 8. Tạo Đối Tượng                       |");
-            Console.WriteLine("| 9. Tạo Đối Tượngn                      |");
+            Console.WriteLine("| 3. Tạo Đối Tượng Tủ                    |");
+            Console.WriteLine("| 4. Tạo Đối Tượng Kệ                    |");
+            Console.WriteLine("| 5. Tạo Đối Tượng Giường                |");
             Console.WriteLine("| 0. Về Menu Chính                       |");
             Console.WriteLine("==========================================");
             Console.Write("Nhập chức năng: ");
@@ -41,17 +37,14 @@ namespace QuanLyCuaHangNoiThat
             Console.WriteLine("==========================================");
             switch(i)
             {
+                
                 case 0:
                     {
+                        /*Console.Title = "Nhập Thông Tin | " + Program.getName();
+                        MenuNhapThongTin();*/
                         break;
                     }
-                case 1:
-                    {
-                        Console.Title = "Nhập Thông Tin | " + Program.getName();
-                        MenuNhapThongTin();
-                        break;
-                    }
-                case 2: //Nhập Thông Tin Bàn
+                case 1: //Nhập Thông Tin Bàn
                     {
                         Console.Title = "Nhập Thông Tin Bàn | " + Program.getName();
                         Console.WriteLine("|--         Nhập Thông Tin Bàn         --|");
@@ -59,16 +52,39 @@ namespace QuanLyCuaHangNoiThat
                         MenuExtendNhapThongTinBan();
                         break;
                     }
-                case 3: //Nhập Thông Tin Ghế
+                case 2: //Nhập Thông Tin Ghế
                     {
                         Console.Title = "Nhập Thông Tin Ghế | " + Program.getName();
-                        Console.WriteLine("Nhập Đối Tượng Ghế");
+                        Console.WriteLine("|--         Nhập Thông Tin Ghế         --|");
                         MenuNhapThongTin();
-                        MenuExtendNhapThongTinBan();
+                        //MenuExtendNhapThongTinBan();
+                        break;
+                    }
+                case 3: //Nhập Thông Tin Tủ
+                    {
+                        Console.Title = "Nhập Thông Tin Tủ | " + Program.getName();
+                        Console.WriteLine("|--         Nhập Thông Tin Tủ          --|");
+                        MenuNhapThongTin();
+                        break;
+                    }
+                case 4: //Nhập Thông Tin Kệ
+                    {
+                        Console.Title = "Nhập Thông Tin Kệ | " + Program.getName();
+                        Console.WriteLine("|--         Nhập Thông Tin Kệ          --|");
+                        MenuNhapThongTin();
+                        break;
+                    }
+                case 5: //Nhập Thông Tin Giường
+                    {
+                        Console.Title = "Nhập Thông Tin Giường | " + Program.getName();
+                        Console.WriteLine("|--        Nhập Thông Tin Giường       --|");
+                        MenuNhapThongTin();
                         break;
                     }
             }
-            Console.WriteLine("| 0. Hoàn Tất Nhập                       |");
+            Console.WriteLine("| 12. Nhập Xong và Quay Lại              |");
+            Console.WriteLine("|           |_>(Tạo Đối Tượng Khác)      |");
+            Console.WriteLine("| 0. Nhập Xong và Về Menu Chính          |");
             Console.WriteLine("==========================================");
             Console.Write("Nhập chức năng: ");
         }
@@ -96,6 +112,10 @@ namespace QuanLyCuaHangNoiThat
             Console.WriteLine("==========================================");
             Console.WriteLine("| 11. Hiện Tất Cả Đối Tượng              |");
             Console.WriteLine("| 1. Lọc Ra Đối Tượng Bàn                |");
+            Console.WriteLine("| 2. Lọc Ra Đối Tượng Ghế                |");
+            Console.WriteLine("| 3. Lọc Ra Đối Tượng Tủ                 |");
+            Console.WriteLine("| 4. Lọc Ra Đối Tượng Kệ                 |");
+            Console.WriteLine("| 5. Lọc Ra Đối Tượng Giường             |");
             Console.WriteLine("| 0. Về Menu Chính                       |");
             Console.WriteLine("==========================================");
             Console.Write("Nhập chức năng: ");
@@ -103,6 +123,7 @@ namespace QuanLyCuaHangNoiThat
         public static void MenuUpdate()
         {
             Console.Title = "Cập Nhật Đối Tượng" + Program.getName();
+            Console.WriteLine("Dùng phím mũi tên để chọn đối tượng cần cập nhật");
         }
     }
 }

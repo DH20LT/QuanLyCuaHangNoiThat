@@ -50,14 +50,31 @@ namespace QuanLyCuaHangNoiThat
             setSoLuong(SoLuong);
             setSoDaBan(SoDaBan);
         }
+        public static void ExtendProperties(Ban ban)
+        {
+            ban.setLoaiBan(Console.ReadLine());
+        }
         public override void NhapThongTin(ArrayList arrNoiThat, int i)
         {
             Console.Clear();
             base.NhapThongTin(arrNoiThat, i);
+            Console.Write("Loại Bàn      : ");
+            setLoaiBan(Console.ReadLine());
+            Console.Clear();
+            base.NhapThongTin(arrNoiThat, i);
         }
+        
         public override void XuatThongTin(string CachGoi, string GiaTri)
         {
-            base.XuatThongTin("Loại Bàn", LoaiBan);
+            base.XuatThongTin(CachGoi, GiaTri);
+        }
+        public void CapNhatThongTin(ArrayList arrNoiThat, int i)
+        {
+            base.NhapThongTin(arrNoiThat, i);
+            Console.Write("Loại Bàn      : ");
+            setLoaiBan(Console.ReadLine());
+            Console.Clear();
+            base.NhapThongTin(arrNoiThat, i);
         }
     }
 }

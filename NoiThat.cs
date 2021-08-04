@@ -127,13 +127,27 @@ namespace QuanLyCuaHangNoiThat
                             NhapThongTin(arrNoiThat, i);
                             break;
                         }
+                    case 11:
+                        {
+                            iChucNang = -1;
+                            break;
+                        }
+                    case 12: // Quay Lại (Tạo Đối Tượng Khác)
+                        {
+                            ChucNang.CreateObject(arrNoiThat);
+                            break;
+                        }
                     case 0:
                         {
                             Program.Programming(arrNoiThat);
                             break;
                         }
                 }
-            }while(true);
+                if (iChucNang == -1)
+                {
+                    break;
+                }
+            } while(iChucNang > 0);
             //Console.WriteLine("Hãng Sản Xuất : ");
             //Console.WriteLine("Nơi Sản Xuất  : ");
         }
@@ -151,14 +165,19 @@ namespace QuanLyCuaHangNoiThat
             Console.WriteLine("| Giá : " + Gia);
             Console.WriteLine("| Số Lượng : " + SoLuong);
             Console.WriteLine("| Số Đã Bán : " + SoDaBan);
+            Console.WriteLine("==========================================");
+        }
+        public virtual void XuatThongTin(int i)
+        {
+            Console.WriteLine(Ten);
         }
         public virtual void XuatThongTin(string CachGoi, string GiaTri)
         {
             Console.WriteLine("==========================================");
             Console.WriteLine("| Tên : " + Ten);
             if (GiaTri.Equals(""))
-            { } else 
-                Console.WriteLine("| {0} : {1}", CachGoi, GiaTri);
+            { } else
+            { Console.WriteLine("| {0} : {1}", CachGoi, GiaTri); }
             Console.WriteLine("| Mã Sản Xuất : " + MaSanPham);
             Console.WriteLine("| Kích Thước : " + KichThuoc);
             Console.WriteLine("| Vật Liệu : " + VatLieu);
@@ -168,6 +187,7 @@ namespace QuanLyCuaHangNoiThat
             Console.WriteLine("| Giá : " + Gia);
             Console.WriteLine("| Số Lượng : " + SoLuong);
             Console.WriteLine("| Số Đã Bán : " + SoDaBan);
+            Console.WriteLine("==========================================");
         }
     }
 }
