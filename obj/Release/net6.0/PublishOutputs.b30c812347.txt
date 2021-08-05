@@ -1,0 +1,5 @@
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Release\net6.0\publish\QuanLyCuaHangNoiThat.exe
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Release\net6.0\publish\QuanLyCuaHangNoiThat.dll
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Release\net6.0\publish\QuanLyCuaHangNoiThat.deps.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Release\net6.0\publish\QuanLyCuaHangNoiThat.runtimeconfig.json
+D:\GitHub\QuanLyCuaHangNoiThat\bin\Release\net6.0\publish\QuanLyCuaHangNoiThat.pdb
